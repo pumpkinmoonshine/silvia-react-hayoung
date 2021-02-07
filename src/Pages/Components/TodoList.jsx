@@ -18,7 +18,6 @@ export default function TodoList({ data }) {
     if (e.key === "Enter") {
       dispatch(modifyList({ id: data.id, text: text }));
       setModifyStatus(!isModifyClicked);
-      setText("");
     }
   };
   const onStatusChange = () => {
